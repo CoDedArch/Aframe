@@ -1,0 +1,11 @@
+Model Information:
+* title:	Simple Spooky Gate
+* source:	https://sketchfab.com/3d-models/simple-spooky-gate-1afcdff1cfd745fbb20d874444b442f9
+* author:	kris vidotto (https://sketchfab.com/kvidotto)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Simple Spooky Gate" (https://sketchfab.com/3d-models/simple-spooky-gate-1afcdff1cfd745fbb20d874444b442f9) by kris vidotto (https://sketchfab.com/kvidotto) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

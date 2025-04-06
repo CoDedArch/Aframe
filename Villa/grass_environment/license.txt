@@ -1,0 +1,11 @@
+Model Information:
+* title:	Temple Environment - Grass Block
+* source:	https://sketchfab.com/3d-models/temple-environment-grass-block-92742d3837a644a9a0c89b8418894b45
+* author:	11.10melons (https://sketchfab.com/11.10melons)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Temple Environment - Grass Block" (https://sketchfab.com/3d-models/temple-environment-grass-block-92742d3837a644a9a0c89b8418894b45) by 11.10melons (https://sketchfab.com/11.10melons) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

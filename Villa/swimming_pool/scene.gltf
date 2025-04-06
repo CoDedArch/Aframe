@@ -1,0 +1,447 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 1862,
+      "max": [
+        33.40936279296875,
+        264.7999267578125,
+        89.72970581054688
+      ],
+      "min": [
+        -893.2188720703125,
+        -264.5115661621094,
+        -115.03097534179688
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 22344,
+      "componentType": 5126,
+      "count": 1862,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 1862,
+      "max": [
+        2.8328726291656494,
+        1.8237223625183105
+      ],
+      "min": [
+        -1.8328726291656494,
+        -0.82283616065979
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 14896,
+      "componentType": 5126,
+      "count": 1862,
+      "max": [
+        2.8328726291656494,
+        1.8237223625183105
+      ],
+      "min": [
+        -1.8328726291656494,
+        -0.82283616065979
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 8112,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 44688,
+      "componentType": 5126,
+      "count": 14382,
+      "max": [
+        57.557830810546875,
+        2.5,
+        70.05264282226563
+      ],
+      "min": [
+        -2.500001907348633,
+        -52.49568176269531,
+        -122.77332305908203
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 217272,
+      "componentType": 5126,
+      "count": 14382,
+      "max": [
+        1.0,
+        1.0,
+        0.9999484419822693
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 29792,
+      "componentType": 5126,
+      "count": 14382,
+      "max": [
+        1.0,
+        1.0
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 32448,
+      "componentType": 5125,
+      "count": 81552,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 389856,
+      "componentType": 5126,
+      "count": 10201,
+      "max": [
+        436.4334411621094,
+        237.53048706054688,
+        1.4366859197616577
+      ],
+      "min": [
+        -436.433349609375,
+        -237.53057861328125,
+        -1.418857455253601
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 512268,
+      "componentType": 5126,
+      "count": 10201,
+      "max": [
+        0.058809906244277954,
+        0.07192308455705643,
+        1.0
+      ],
+      "min": [
+        -0.06611437350511551,
+        -0.0732368752360344,
+        0.9968302249908447
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 144848,
+      "componentType": 5126,
+      "count": 10201,
+      "max": [
+        0.9999993443489075,
+        0.9999993443489075
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 358656,
+      "componentType": 5125,
+      "count": 60000,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "erg112 (https://sketchfab.com/erg112)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/tas-swimming-pool-0bd251eae6b74d53ad0bc33b1dca15aa",
+      "title": "tas swimming pool"
+    },
+    "generator": "Sketchfab-12.67.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 598656,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 226456,
+      "byteOffset": 598656,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 634680,
+      "byteOffset": 825112,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 1459792,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "SWIMMING_POOL_LADDER__0",
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.6
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Tiles_small_blue",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.588,
+          0.588,
+          0.588,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8929713596497552
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "SWIMMING POOL_Tiles small blue_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2,
+            "TEXCOORD_1": 3
+          },
+          "indices": 4,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "SWIMMING POOL LADDER__0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 6,
+            "POSITION": 5,
+            "TEXCOORD_0": 7
+          },
+          "indices": 8,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "SWIMMING POOL WATER__0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 10,
+            "POSITION": 9,
+            "TEXCOORD_0": 11
+          },
+          "indices": 12,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "a1780950fed747308b21c06d008b70d4.fbx"
+    },
+    {
+      "children": [
+        3,
+        5,
+        7
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        429.86181640625,
+        -87.52325439453125,
+        -0.7500787973403931,
+        1.0
+      ],
+      "name": "SWIMMING POOL"
+    },
+    {
+      "mesh": 0,
+      "name": "SWIMMING POOL_Tiles small blue_0"
+    },
+    {
+      "children": [
+        6
+      ],
+      "matrix": [
+        -0.999999999999841,
+        1.2246471172829639e-16,
+        -5.642599491098904e-07,
+        0.0,
+        -5.642599491098817e-07,
+        1.7484555314695172e-07,
+        0.9999999999998256,
+        0.0,
+        1.2510307809304599e-13,
+        1.2664715051650808,
+        -2.2143691086544444e-07,
+        0.0,
+        -332.3675231933594,
+        -19.873443603515625,
+        255.66175842285156,
+        1.0
+      ],
+      "name": "SWIMMING POOL LADDER"
+    },
+    {
+      "mesh": 1,
+      "name": "SWIMMING POOL LADDER__0"
+    },
+    {
+      "children": [
+        8
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.5179342655047279e-06,
+        0.9999999999988479,
+        0.0,
+        0.0,
+        -0.9999999999988479,
+        1.5179342655047279e-06,
+        0.0,
+        -0.10528564453125,
+        -15.608123779296875,
+        -0.8056488037109375,
+        1.0
+      ],
+      "name": "SWIMMING POOL WATER"
+    },
+    {
+      "mesh": 2,
+      "name": "SWIMMING POOL WATER__0"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

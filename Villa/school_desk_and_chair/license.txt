@@ -1,0 +1,11 @@
+Model Information:
+* title:	School Desk and Chair
+* source:	https://sketchfab.com/3d-models/school-desk-and-chair-004b95391e4e48a797ee8d0cf612b5cf
+* author:	T I A N (https://sketchfab.com/Tian96)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "School Desk and Chair" (https://sketchfab.com/3d-models/school-desk-and-chair-004b95391e4e48a797ee8d0cf612b5cf) by T I A N (https://sketchfab.com/Tian96) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

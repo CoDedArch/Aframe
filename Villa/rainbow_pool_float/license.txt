@@ -1,0 +1,11 @@
+Model Information:
+* title:	Rainbow pool float
+* source:	https://sketchfab.com/3d-models/rainbow-pool-float-a51c2ca7535a4dcbb4cf708a21ad88c5
+* author:	assetfactory (https://sketchfab.com/assetfactory)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Rainbow pool float" (https://sketchfab.com/3d-models/rainbow-pool-float-a51c2ca7535a4dcbb4cf708a21ad88c5) by assetfactory (https://sketchfab.com/assetfactory) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

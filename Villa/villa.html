@@ -1,0 +1,413 @@
+<!-- THE VILLA PROJECT -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VILLA PROJECT</title>
+    <script src="./script/aframe.min.js" ></script>
+    <script src="./script/ada-water.js"></script>
+    <!-- <script src="./script/cannon.min.js"></script> -->
+    <!-- adding the cannon script to create water motion -->
+</head>
+<body>
+    <!-- started the scene for my villa -->
+    <a-scene  loading-screen="dotsColor: red; backgroundColor: black" 
+              physics="debug: true" 
+              pool__enemy="mixin: enemy; size: 10">
+        <!-- <a-entity camera wasd-controls="movementSpeed: 50; fly: true;" position="0 60 0"></a-entity> -->
+        <!-- the assets management System -->
+        <a-camera position="0 5 80"></a-camera>
+        
+
+        <!--hand controls  -->
+        <a-entity 
+        id="leftHand" 
+        hand-controls="hand: left; handModelStyle: lowPoly; color: #ffcccc"
+        ></a-entity>
+
+        <a-entity 
+        id="rightHand" 
+        hand-controls="hand: right; handModelStyle: lowPoly; color: #ffcccc"
+        ></a-entity>
+
+        <!-- look controls -->
+        <!-- <a-entity camera look-controls position="0 1.6 0"></a-entity> -->
+
+
+
+        <a-assets>
+            <!-- this calls the .Bin files it came with -->
+            <a-asset-item id="Villa"  src="./house_model/scene.gltf"></a-asset-item>
+            <a-asset-item id="floor"  src="./scifi_floor/scene.gltf"></a-asset-item>
+            <a-asset-item id="bed"  src="./bed_b/scene.gltf"></a-asset-item>
+            <a-asset-item id="gate"  src="./simple_spooky_gate/scene.gltf"></a-asset-item>
+            <a-asset-item id="palm_trees"  src="./palm_trees/scene.gltf"></a-asset-item>
+            <a-asset-item id="maple_tree"  src="./maple_tree/scene.gltf"></a-asset-item>
+            <a-asset-item id="street_lamp"  src="./low_poly_street_lamp/scene.gltf"></a-asset-item>
+            <a-asset-item id="desk"  src="./school_desk_and_chair/scene.gltf"></a-asset-item>
+            <a-asset-item id="table_lamp"  src="./table_lamp_01/scene.gltf"></a-asset-item>
+            <a-asset-item id="cabnet"  src="./ikea_alex_drawer_unit/scene.gltf"></a-asset-item>
+            <a-asset-item id="pool"  src="./swimming_pool/scene.gltf"></a-asset-item>
+            <a-asset-item id="rangeRover" src="./range_rover_svautobiography/scene.gltf"></a-asset-item>
+            <a-asset-item id="flowers" src="./low_poly_purple_flowers/scene.gltf"></a-asset-item>
+            <a-asset-item id="grassEnv" src="./grass_environment/scene.gltf" ></a-asset-item>
+            <a-asset-item id="road" src="./road_straight/scene.gltf" ></a-asset-item>
+            <a-asset-item id="sofa" src="./sofa_chair/scene.gltf" ></a-asset-item>
+            <a-asset-item id="duck" src="./duck_floatie/scene.gltf" ></a-asset-item>
+            <a-asset-item id="ballon" src="./rainbow_pool_float/scene.gltf" ></a-asset-item>
+            <a-asset-item id="cabana" src="./cabana/scene.gltf" ></a-asset-item>
+            <a-asset-item id="path" src="./path/scene.gltf" ></a-asset-item>
+            <a-asset-item id="dog" src="./dog/scene.gltf" ></a-asset-item>
+
+            <img src="./house_model/textures/2k_stars.jpg" id="sky">
+            <img  id="wall_texture" src="./scifi_floor/textures/set-sj-ioulMmOPabk-unsplash.jpg" alt="">
+            <img src="./house_model/textures/water.jpg" id="water" alt="">
+            <img src="./scifi_floor/textures/Floor_BAKED_baseColor.jpg" id="ss" alt="">
+            <img src="./scifi_floor/textures/Floor_BAKED_normal.png" id="nrm" alt="">
+            
+        </a-assets>
+
+
+        <a-sky src="#sky" scale="0.5 0.5 0.5"></a-sky>
+        <!-- lights -->
+        <a-entity light="type:ambient; intensity: 0.3"></a-entity>
+        <!-- <a-entity light="type: point; intensity: 2; distance: 40; color: #ffff40"></a-entity> -->
+        <a-entity light="type: point; intensity: 1; distance: 30; color: #ffff40" position="2.3 2.9 23"></a-entity>
+        <a-entity light="type: point; intensity: 1; distance: 30; color: #ffff40" position="-6 2.9 23"></a-entity>
+        <a-entity light="type: point; intensity: 1; distance: 30; color: #fffff" position="-6 2.9 23"></a-entity>
+        <a-entity light="type: point; intensity: 1; distance: 10; color: #fffff" position="-15 0.5 -6"></a-entity>
+        <a-entity light="type: point; intensity: 1; distance: 5; color: #fffff" position="-15 0.5 -15"></a-entity>
+        <a-entity light="type: point; intensity: 1; distance: 5; color: #fffff" position="-15 0.5 -1"></a-entity>
+        
+        <a-entity light="type: point; intensity: 1; distance: 10; color: #fffff" position="-8.5 0.5 -6"></a-entity>
+        <a-entity light="type: point; intensity: 1; distance: 5; color: #fffff" position="-8.5 0.5 -15"></a-entity>
+        <a-entity light="type: point; intensity: 1; distance: 5; color: #fffff" position="-8.5 0.5 -1"></a-entity>
+        
+        <!-- lamps -->
+        <a-entity light="type: point; intensity: 3; distance: 10; color: #fffff" position="14 7 1"></a-entity>
+        <a-entity light="type: point; intensity: 3; distance: 5; color: #fffff" position="14 3 1"></a-entity>
+        <a-entity light="type: point; intensity: 3; distance: 10; color: #fffff" position="6 7 -0.7"></a-entity>
+        <!-- living room -->
+        <a-entity light="type: point; intensity: 5; distance: 10; color: purple; groundColor: #800080; castShadow: true; shadowMapWidth: 512.1" position="8.69976 5.98929 2.52056" id="purple"></a-entity>
+
+
+        <!-- create the house model with the respectice matrials-->
+        <a-entity static-body
+        gltf-model="#Villa" 
+        position="4 0 0" 
+        scale="1 1 1">
+        </a-entity>
+        <!-- dog -->
+        <a-entity static-body
+        gltf-model="#dog" 
+        position="10 0.6 8.5" 
+        scale="1.4 1.4 1.4"
+        rotation="0 -90 0"
+        >
+        </a-entity>
+        
+        <!-- grass environment -->
+        <a-entity 
+        gltf-model="#grassEnv" 
+        position="170 -0.6 0" 
+        scale="200 0 200" >
+        </a-entity>
+        
+        <!-- path -->
+        <a-entity 
+        gltf-model="#path" 
+        position="-5 -0.07 10" 
+        scale="0.03 0.02 0.07" 
+        rotation="0 -60 0"
+        >
+        </a-entity>
+        
+        
+        <!-- grass for cabana -->
+        <a-entity 
+        gltf-model="#grassEnv" 
+        position="-5 0.2 14" 
+        scale="10 0 10" >
+        </a-entity>
+
+        <!-- bed -->
+        <a-entity 
+        gltf-model="#bed" 
+        position="12.8 3.3 2" 
+        scale="1 1 1">
+        </a-entity>
+        <a-entity 
+        gltf-model="#bed" 
+        position="5 3.3 0.3" 
+        scale="1 1 1"
+        rotation="0 -90 0"
+        >
+        </a-entity>
+        <!-- sofa -->
+        <a-entity 
+        gltf-model="#sofa" 
+        position="3 3.3 0.2" 
+        scale="1 1 1"
+        rotation="0 -180 0"
+        >
+        </a-entity>
+
+        <a-entity 
+        gltf-model="#bed" 
+        position="3.5 0 -12" 
+        scale="1 1 1"
+        rotation="0 -90 0"
+        >
+        </a-entity>
+
+        <!-- flowers -->
+        <a-entity gltf-model="#flowers" position="-2 0.5 0" scale="0.007 0.007 0.007"></a-entity>
+        <a-entity gltf-model="#flowers" position="-2 0.5 5" scale="0.007 0.007 0.007"></a-entity>
+        <a-entity gltf-model="#flowers" position="4 0.5 5" scale="0.007 0.007 0.007"></a-entity>
+        <a-entity gltf-model="#flowers" position="15 0.5 5" scale="0.007 0.007 0.007"></a-entity>
+        
+        <!-- road -->
+        <a-entity gltf-model="#road" position="-2 0.1 40" scale="0.15 0.1 0.38"></a-entity>
+        <!-- street lamp -->
+        <a-entity 
+        gltf-model="#street_lamp" 
+        position="2.5 2.6 20.9" 
+        scale="6 6 6" 
+        rotation="0 10 0">
+        </a-entity>
+        <a-entity 
+        gltf-model="#street_lamp" 
+        position="-6 2.6 20.9" 
+        scale="6 6 6" 
+        rotation="0 85 0">
+        </a-entity>
+        <!-- floor -->
+        <a-entity static-body gltf-model="#floor" position="0 0 0" scale="0.369 0.369 0.369">
+        </a-entity>
+        <!-- gate -->
+        <a-entity 
+        gltf-model="#gate" 
+        position="-3.25 0 20.5" 
+        scale="1.1 1.1 1.1" 
+        rotation="0 90 0">
+        </a-entity>        
+        <!-- palm trees -->
+        <a-entity static-body
+        gltf-model="#palm_trees" 
+        position="-18 0 4" 
+        scale="2 2 2" 
+        rotation="0 90 0">
+        </a-entity>
+        <a-entity 
+        gltf-model="#palm_trees" 
+        position="-18 0 17.8" 
+        scale="1 1 1" 
+        rotation="0 90 0">
+        </a-entity>
+        <!-- front tree -->
+
+        <!-- mable -->
+        <a-entity 
+        gltf-model="#maple_tree" 
+        position="17.5 0.2 15" 
+        scale="0.015 0.015 0.015" 
+        rotation="0 90 0">
+        </a-entity>
+        <!-- car -->
+       <a-entity 
+       gltf-model="#rangeRover" 
+       position="14 2 14" 
+       scale="0.015 0.015 0.015"
+       ></a-entity>
+       <!-- cabana -->
+       <a-entity 
+       gltf-model="#cabana" 
+       position="-14 0.4 14" 
+       scale="0.3 0.2 0.3"
+       ></a-entity>
+        <!-- lamp -->
+        <a-entity 
+        gltf-model="#table_lamp" 
+        position="14 4.3 1" 
+        scale="0.01 0.01 0.01" 
+        rotation="0 0 0" >
+        </a-entity>
+        <!-- secoond room -->
+        <a-entity 
+        gltf-model="#cabnet" 
+        position="6 3.7 -0.7" 
+        scale="1 1 1" 
+        rotation="0 -90 0" >
+        </a-entity>
+        <!-- lamp -->
+        <a-entity 
+        gltf-model="#table_lamp" 
+        position="6 4.1 -0.7" 
+        scale="0.01 0.01 0.01" 
+        rotation="0 0 0" >
+        </a-entity>
+        <!-- student desk -->
+        <a-entity 
+        gltf-model="#desk" 
+        position="23.8 3.1 10" 
+        scale="0.2 0.2 0.2" 
+        rotation="0 0 0" >
+        </a-entity>
+        
+        <!-- pool -->
+        <a-entity 
+        gltf-model="#pool" 
+        position="-11 0.5 -6" 
+        scale="0.02 0.01 0.02" 
+        rotation="0 90 0" >
+        </a-entity>
+        <!-- duck  -->
+        <a-entity 
+        animation="property: rotation; to: 0 0 360; loop: true; dur: 100000; easing:linear"
+        gltf-model="#duck" 
+        position="-11 0.6 -8"
+        scale="0.5 0.5 0.5"  
+        rotation="0 90 0" >
+        </a-entity>
+        
+        <!-- ballon -->
+        <a-entity 
+        gltf-model="#ballon" 
+        position="-11 0.6 -1"
+        scale="0.5 0.5 0.5"  
+        rotation="0 90 0" >
+        </a-entity>
+
+        <!-- curtains -->
+   
+                
+        <!-- front wall for my villa-->
+        <a-entity 
+        geometry="primitive:box; height:20; width:114.5; depth:3" 
+        material="src:#wall_texture; repeat: 1 1; roughness: 20; side:double" 
+        position="11.2 1.5 20.5" 
+        scale="0.15 0.15 0.15"></a-entity>
+        <!-- walls  -->
+        <a-entity 
+        geometry="primitive:box; height:20; width:4; depth:3" 
+        material="src:#wall_texture; repeat: 1 1; roughness: 20; side:double" 
+        position="20 1.5 20.5" 
+        scale="0.15 0.15 0.15"></a-entity>
+
+        <a-entity 
+        geometry="primitive:box; height:20; width:90; depth:3" 
+        material="src:#wall_texture; repeat: 1 1; roughness: 20; side:double" 
+        position="-13 1.5 20.5" 
+        scale="0.15 0.15 0.15"></a-entity>
+        
+        <a-entity 
+        geometry="primitive:box; height:20; width:4; depth:3" 
+        material="src:#wall_texture; repeat: 1 1; roughness: 20; side:double" 
+        position="-20 1.5 20.5" 
+        scale="0.15 0.15 0.15"></a-entity>
+   
+        <!-- Back wall for my villa -->
+        <a-entity 
+        geometry="primitive:box; height:20; width:114.5; depth:3" 
+        material="src:#wall_texture; repeat: 1 1; roughness: 20; side:double" 
+        position="11.2 1.5 -20.5" 
+        scale="0.15 0.15 0.15"></a-entity>
+        <!-- walls  -->
+        <a-entity 
+        geometry="primitive:box; height:20; width:4; depth:3" 
+        material="src:#wall_texture; repeat: 1 1; roughness: 20; side:double" 
+        position="20 1.5 -20.5" 
+        scale="0.15 0.15 0.15"></a-entity>
+
+        <a-entity 
+        geometry="primitive:box; height:20; width:90; depth:3" 
+        material="src:#wall_texture; repeat: 1 1; roughness: 20; side:double" 
+        position="-13 1.5 -20.5" 
+        scale="0.15 0.15 0.15"></a-entity>
+
+        <a-entity 
+        geometry="primitive:box; height:20; width:4; depth:3" 
+        material="src:#wall_texture; repeat: 1 1; roughness: 20; side:double" 
+        position="-20 1.5 -20.5" 
+        scale="0.15 0.15 0.15"></a-entity> 
+        <!-- my Side walls -->
+        <a-entity 
+        geometry="primitive:box; height:20; width:3; depth:271" 
+        material="src:#wall_texture; repeat: 1 1; roughness: 20; side:double" 
+        position="-20 1.5 0" 
+        scale="0.15 0.15 0.15"></a-entity>
+        <a-entity 
+        geometry="primitive:box; height:20; width:3; depth:271" 
+        material="src:#wall_texture; repeat: 1 1; roughness: 20; side:double" 
+        position="20 1.5 0" 
+        scale="0.15 0.15 0.15"></a-entity>
+
+        <!-- <a-plane height="17" width="9" position="-11 0.5 -6" src="./house_model/textures/water.jpg" rotation="-90 0 0"></a-plane> -->
+        <!--create the plane for the water  -->
+        <!-- <a-entity 
+        geometry="primitive: plane; width:9; height:17;"
+        material="src:#water; opacity: 0.5"
+        position="-11 0.5 -6"
+        rotation="-90 0 0"
+        water 
+        cannon-body="mass:0; shape:plane;"
+        ></a-entity> -->
+
+        <a-water
+        opacity="0.8"
+        geometry="primitive: plane; width:8.7; height:16.8;"
+        base-color="aqua"
+        repeat="10"
+        voronoi-points="30"
+        rotation="-90 0 0"
+        position="-11 0.46 -6"
+      >
+      </a-water>
+
+
+
+        <a-entity 
+        geometry="primitive: plane; width:9; height:17;"
+        material="src:#ss; repeat: 5 5;"
+        position="-10 0.2 -8"
+        rotation="-90 0 0"
+        scale=" 1.7 1.5 1.8"
+        ></a-entity>
+
+        <a-plane 
+        position="7 5 6" 
+        color="black" 
+        height="2" 
+        width="18"></a-plane>
+
+       
+
+
+        <!--  -->
+        <!-- <a-box height="10" width=10 position="-13 2 -5"rotation="90 -90 0" ></a-box> -->
+        <!-- <a-box   color="white" position="3 4 0" height="5" width="2" depth="0.3" rotation="90 90 0"></a-box> -->
+        <!-- bed legs -->
+        <!-- <a-box color="white" position="5.5 4.2 1" height="2" width="0.2" depth="0.2"></a-box>
+        <a-box color="white" position="0.7 4.2 1" height="1" width="0.2" depth="0.2"></a-box>
+        <a-box color="white" position="5.5 4.2 -1" height="2" width="0.2" depth="0.2"></a-box>
+        <a-box color="white" position="0.7 4.2 -1" height="1" width="0.2" depth="0.2"></a-box> -->
+    </a-scene>
+    <script>
+      document.querySelector("a-water").setAttribute("animation", {
+        property: "scale",
+        // from: "10 2 1",
+        // to: "2 15 2",
+        dur: 2000,
+        loop: true,
+        dir: "alternate",
+        easing: "easeOutElastic",
+      });
+
+      var el = sceneEl.components.pool__enemy.requestEntity();
+      el.play();
+      sceneEl.components.pool__enemy.returnEntity(el);
+    </script>
+</body>
+</html>

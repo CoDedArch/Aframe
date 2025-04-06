@@ -1,0 +1,11 @@
+Model Information:
+* title:	SciFi floor
+* source:	https://sketchfab.com/3d-models/scifi-floor-95bb675d4cce44f3b5f8418b70cf6c96
+* author:	sciencevr (https://sketchfab.com/sciencevr)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "SciFi floor" (https://sketchfab.com/3d-models/scifi-floor-95bb675d4cce44f3b5f8418b70cf6c96) by sciencevr (https://sketchfab.com/sciencevr) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
